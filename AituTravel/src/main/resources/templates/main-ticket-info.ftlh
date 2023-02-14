@@ -14,6 +14,7 @@
             <h2>${ticket.departureDate}   ${ticket.arriveDate}</h2>
             <h3>${ticket.cost}</h3>
             <form action="/main/delete/${ticket.id}" method="post">
+                <a href="/ticket-info-update/${ticket.id}" class="btn btn-primary">Update</a>
                 <input type="submit" class="btn btn-primary mb1 bg-red" value="Delete" style="background-color: orangered">
             </form>
         </div>

@@ -51,7 +51,19 @@ public class TicketController {
     public String createPage(){
         return "ticket";
     }
-
+    @PostMapping("/ticket-info-update/{id}")
+    public String ticketInfoUpdate(@PathVariable Long id, Ticket ticket){
+        Ticket ticket1 = ticketService.getProductById(id);
+        ticket1 = ticket;
+        ticket1.setCost(ticket.getCost());
+        ticketService.saveTicket(ticket1);
+        return "redirect:/";
+    }
+    @GetMapping("/ticket-info-update/{id}")
+    public String ticketInfoUpdate(@PathVariable Long id, Model model){
+        model.addAttribute("ticket", ticketService.getProductById(id));
+        return "ticket-info-update";
+    }
 
 
 
