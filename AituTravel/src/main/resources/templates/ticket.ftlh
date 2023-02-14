@@ -7,7 +7,7 @@
         <form action="/ticket/create" method="post"><br>
 
                 <label for="cost" >Price of this ticket</label>
-                <input type="number" class="form-control" id="cost" placeholder="Set the price.." value="" required="">
+                <input type="number" class="form-control" id="cost" name="cost" placeholder="Set the price.." value="" required="">
                 <div class="invalid-feedback">
                     Valid first name is required.
                 </div>
