@@ -22,8 +22,8 @@
                 <li><a href="/newticket" class="nav-link px-2 text-white">Creating</a></li>
             </ul>
             <div class="text-end">
-                <button type="button" class="btn btn-outline-light me-2">Login</button>
-                <button type="button" class="btn btn-warning">Sign-up</button>
+                <button type="button" class="btn btn-outline-light me-2"><a href="/login">Login</a></button>
+                <button type="button" class="btn btn-warning"><a href="/signup">Sign-up</a></button>
             </div>
         </div>
     </div>
